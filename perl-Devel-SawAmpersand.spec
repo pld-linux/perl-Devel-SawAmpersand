@@ -1,3 +1,7 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Devel
 %define		pnam	SawAmpersand
@@ -20,7 +24,7 @@ Summary(uk):	Модуль для Perl Devel::SawAmpersand
 Summary(zh_CN):	Devel::SawAmpersand Perl дё©И
 Name:		perl-Devel-SawAmpersand
 Version:	0.20
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -86,6 +90,8 @@ Devel::SawAmpersand Perl дё©И
 perl Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
+%{!?_without_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -97,7 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/B
+%{perl_sitearch}/B/FindAmpersand.pm
 %{perl_sitearch}/Devel/*.pm
 %dir %{perl_sitearch}/auto/Devel/SawAmpersand
 %{perl_sitearch}/auto/Devel/SawAmpersand/SawAmpersand.bs
