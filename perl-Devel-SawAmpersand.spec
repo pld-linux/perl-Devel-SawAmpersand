@@ -23,13 +23,13 @@ Summary(sv):	Devel::SawAmpersand Perlmodul
 Summary(uk):	Модуль для Perl Devel::SawAmpersand
 Summary(zh_CN):	Devel::SawAmpersand Perl дё©И
 Name:		perl-Devel-SawAmpersand
-Version:	0.20
-Release:	9
+Version:	0.30
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -102,7 +102,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc ChangeLog README
 %{perl_sitearch}/B/FindAmpersand.pm
 %{perl_sitearch}/Devel/*.pm
 %dir %{perl_sitearch}/auto/Devel/SawAmpersand
