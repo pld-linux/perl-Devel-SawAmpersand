@@ -26,9 +26,9 @@ false again. Trying to set it to false breaks the handling of the $,
 $&, and $' completely.
 
 %description -l pl
-Modu³ Perla Devel::SawAmpersand s³u¿y do pobierznia warto¶ci zmiennej
+Modu³ Perla Devel::SawAmpersand s³u¿y do pobierania warto¶ci zmiennej
 sawampersand. Zmienna globalna sawampersand jest ustawiana na "true".
-gdy analizator sk³adniowy perla zobaczy $, $' lub $&. Nie mo¿na jej
+gdy analizator sk³adniowy Perla zobaczy $, $' lub $&. Nie mo¿na jej
 ponownie ustawiæ na "false". Próba uczynienia tego spowodowa³aby
 ca³kowite popsucie obs³ugi symboli $, $& i $'.
 
