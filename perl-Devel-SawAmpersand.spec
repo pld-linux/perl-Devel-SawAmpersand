@@ -14,7 +14,7 @@ Summary(fr):	Module Perl Devel::SawAmpersand
 Summary(it):	Modulo di Perl Devel::SawAmpersand
 Summary(ja):	Devel::SawAmpersand Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Devel::SawAmpersand ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Devel::SawAmpersand
+Summary(nb):	Perlmodul Devel::SawAmpersand
 Summary(pl):	Modu³ Perla Devel::SawAmpersand
 Summary(pt):	Módulo de Perl Devel::SawAmpersand
 Summary(pt_BR):	Módulo Perl Devel::SawAmpersand
@@ -60,7 +60,7 @@ Devel::SawAmpersand Perl ¥â¥¸¥å¡¼¥ë
 %description -l ko
 Devel::SawAmpersand ÆÞ ¸ðÁÙ.
 
-%description -l no
+%description -l nb
 Perlmodul Devel::SawAmpersand.
 
 %description -l pl
