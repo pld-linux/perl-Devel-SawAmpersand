@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
 %define	pnam	SawAmpersand
-Summary:	Devel-SawAmpersand perl module
-Summary(pl):	Modu³ perla Devel-SawAmpersand
+Summary:	Devel::SawAmpersand perl module
+Summary(pl):	Modu³ perla Devel::SawAmpersand
 Name:		perl-Devel-SawAmpersand
 Version:	0.20
 Release:	7
@@ -14,10 +14,10 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Devel-SawAmpersand perl module querying sawampersand variable.
+Devel::SawAmpersand perl module querying sawampersand variable.
 
 %description -l pl
-Modu³ perla Devel-SawAmpersand.
+Modu³ perla Devel::SawAmpersand.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
