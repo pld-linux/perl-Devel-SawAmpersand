@@ -24,12 +24,12 @@ Summary(uk):	Модуль для Perl Devel::SawAmpersand
 Summary(zh_CN):	Devel::SawAmpersand Perl дё©И
 Name:		perl-Devel-SawAmpersand
 Version:	0.30
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -87,7 +87,8 @@ Devel::SawAmpersand Perl дё©И
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
@@ -103,9 +104,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_sitearch}/B/FindAmpersand.pm
-%{perl_sitearch}/Devel/*.pm
-%dir %{perl_sitearch}/auto/Devel/SawAmpersand
-%{perl_sitearch}/auto/Devel/SawAmpersand/SawAmpersand.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Devel/SawAmpersand/SawAmpersand.so
+%{perl_vendorarch}/B/FindAmpersand.pm
+%{perl_vendorarch}/Devel/*.pm
+%dir %{perl_vendorarch}/auto/Devel/SawAmpersand
+%{perl_vendorarch}/auto/Devel/SawAmpersand/SawAmpersand.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Devel/SawAmpersand/SawAmpersand.so
 %{_mandir}/man3/*
