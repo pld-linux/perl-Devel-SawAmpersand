@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Devel
-%define		pnam	SawAmpersand
+%define	pdir	Devel
+%define	pnam	SawAmpersand
 Summary:	Devel::SawAmpersand - querying sawampersand variable
 Summary(pl):	Devel::SawAmpersand - pobieranie warto¶ci zmiennej sawampersand
 Name:		perl-Devel-SawAmpersand
