@@ -5,27 +5,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Devel
 %define		pnam	SawAmpersand
-Summary:	Devel::SawAmpersand Perl module
-Summary(cs):	Modul Devel::SawAmpersand pro Perl
-Summary(da):	Perlmodul Devel::SawAmpersand
-Summary(de):	Devel::SawAmpersand Perl Modul
-Summary(es):	Módulo de Perl Devel::SawAmpersand
-Summary(fr):	Module Perl Devel::SawAmpersand
-Summary(it):	Modulo di Perl Devel::SawAmpersand
-Summary(ja):	Devel::SawAmpersand Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Devel::SawAmpersand ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul Devel::SawAmpersand
-Summary(pl):	Modu³ Perla Devel::SawAmpersand
-Summary(pt):	Módulo de Perl Devel::SawAmpersand
-Summary(pt_BR):	Módulo Perl Devel::SawAmpersand
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Devel::SawAmpersand
-Summary(sv):	Devel::SawAmpersand Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Devel::SawAmpersand
-Summary(zh_CN):	Devel::SawAmpersand Perl Ä£¿é
+Summary:	Devel::SawAmpersand - querying sawampersand variable
+Summary(pl):	Devel::SawAmpersand - pobieranie warto¶ci zmiennej sawampersand
 Name:		perl-Devel-SawAmpersand
 Version:	0.30
 Release:	2
-License:	GPL
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7e23b11e808d7e5c57f83fe5b7c91a3c
@@ -34,55 +19,18 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Devel::SawAmpersand perl module querying sawampersand variable.
-
-%description -l cs
-Modul Devel::SawAmpersand pro Perl.
-
-%description -l da
-Perlmodul Devel::SawAmpersand.
-
-%description -l de
-Devel::SawAmpersand Perl Modul.
-
-%description -l es
-Módulo de Perl Devel::SawAmpersand.
-
-%description -l fr
-Module Perl Devel::SawAmpersand.
-
-%description -l it
-Modulo di Perl Devel::SawAmpersand.
-
-%description -l ja
-Devel::SawAmpersand Perl ¥â¥¸¥å¡¼¥ë
-
-%description -l ko
-Devel::SawAmpersand ÆÞ ¸ðÁÙ.
-
-%description -l nb
-Perlmodul Devel::SawAmpersand.
+Devel::SawAmpersand Perl module is for querying sawampersand variable.
+The global variable sawampersand gets set to true in that moment in
+which the parser sees one of $, $', and $&. It never can be set to
+false again. Trying to set it to false breaks the handling of the $,
+$&, and $' completely.
 
 %description -l pl
-Modu³ perla Devel::SawAmpersand.
-
-%description -l pt
-Módulo de Perl Devel::SawAmpersand.
-
-%description -l pt_BR
-Módulo Perl Devel::SawAmpersand.
-
-%description -l ru
-íÏÄÕÌØ ÄÌÑ Perl Devel::SawAmpersand.
-
-%description -l sv
-Devel::SawAmpersand Perlmodul.
-
-%description -l uk
-íÏÄÕÌØ ÄÌÑ Perl Devel::SawAmpersand.
-
-%description -l zh_CN
-Devel::SawAmpersand Perl Ä£¿é
+Modu³ Perla Devel::SawAmpersand s³u¿y do pobierznia warto¶ci zmiennej
+sawampersand. Zmienna globalna sawampersand jest ustawiana na "true".
+gdy analizator sk³adniowy perla zobaczy $, $' lub $&. Nie mo¿na jej
+ponownie ustawiæ na "false". Próba uczynienia tego spowodowa³aby
+ca³kowite popsucie obs³ugi symboli $, $& i $'.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
