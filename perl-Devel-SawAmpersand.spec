@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
 %define	pnam	SawAmpersand
-%include	/usr/lib/rpm/macros.perl
 Summary:	Devel-SawAmpersand perl module
 Summary(pl):	Modu³ perla Devel-SawAmpersand
 Name:		perl-Devel-SawAmpersand
 Version:	0.20
-Release:	6
-
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +20,7 @@ Devel-SawAmpersand perl module querying sawampersand variable.
 Modu³ perla Devel-SawAmpersand.
 
 %prep
-%setup -q -n Devel-SawAmpersand-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
