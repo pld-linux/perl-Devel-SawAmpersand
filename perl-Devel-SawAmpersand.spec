@@ -3,7 +3,7 @@ Summary:	Devel-SawAmpersand perl module
 Summary(pl):	Modu³ perla Devel-SawAmpersand
 Name:		perl-Devel-SawAmpersand
 Version:	0.20
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
