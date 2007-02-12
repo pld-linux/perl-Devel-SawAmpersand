@@ -6,7 +6,7 @@
 %define		pdir	Devel
 %define		pnam	SawAmpersand
 Summary:	Devel::SawAmpersand - querying sawampersand variable
-Summary(pl):	Devel::SawAmpersand - pobieranie warto∂ci zmiennej sawampersand
+Summary(pl.UTF-8):   Devel::SawAmpersand - pobieranie warto≈õci zmiennej sawampersand
 Name:		perl-Devel-SawAmpersand
 Version:	0.30
 Release:	3
@@ -25,12 +25,12 @@ which the parser sees one of $, $', and $&. It never can be set to
 false again. Trying to set it to false breaks the handling of the $,
 $&, and $' completely.
 
-%description -l pl
-Modu≥ Perla Devel::SawAmpersand s≥uøy do pobierania warto∂ci zmiennej
+%description -l pl.UTF-8
+Modu≈Ç Perla Devel::SawAmpersand s≈Çu≈ºy do pobierania warto≈õci zmiennej
 sawampersand. Zmienna globalna sawampersand jest ustawiana na "true".
-gdy analizator sk≥adniowy Perla zobaczy $, $' lub $&. Nie moøna jej
-ponownie ustawiÊ na "false". PrÛba uczynienia tego spowodowa≥aby
-ca≥kowite popsucie obs≥ugi symboli $, $& i $'.
+gdy analizator sk≈Çadniowy Perla zobaczy $, $' lub $&. Nie mo≈ºna jej
+ponownie ustawiƒá na "false". Pr√≥ba uczynienia tego spowodowa≈Çaby
+ca≈Çkowite popsucie obs≈Çugi symboli $, $& i $'.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
