@@ -6,7 +6,7 @@
 %define		pdir	Devel
 %define		pnam	SawAmpersand
 Summary:	Devel::SawAmpersand - querying sawampersand variable
-Summary(pl.UTF-8):   Devel::SawAmpersand - pobieranie wartości zmiennej sawampersand
+Summary(pl.UTF-8):	Devel::SawAmpersand - pobieranie wartości zmiennej sawampersand
 Name:		perl-Devel-SawAmpersand
 Version:	0.30
 Release:	3
