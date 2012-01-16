@@ -8,13 +8,13 @@
 Summary:	Devel::SawAmpersand - querying sawampersand variable
 Summary(pl.UTF-8):	Devel::SawAmpersand - pobieranie wartości zmiennej sawampersand
 Name:		perl-Devel-SawAmpersand
-Version:	0.31
-Release:	3
+Version:	0.32
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Devel/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2ac8f290f0d54ebb79b6e8c867f9d9f5
+# Source0-md5:	40fabeb3a624ecc27d86b286b68ff215
 URL:		http://search.cpan.org/dist/Devel-SawAmpersand/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
