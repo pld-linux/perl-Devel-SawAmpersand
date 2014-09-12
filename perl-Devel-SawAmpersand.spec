@@ -9,7 +9,7 @@ Summary:	Devel::SawAmpersand - querying sawampersand variable
 Summary(pl.UTF-8):	Devel::SawAmpersand - pobieranie wartości zmiennej sawampersand
 Name:		perl-Devel-SawAmpersand
 Version:	0.32
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
